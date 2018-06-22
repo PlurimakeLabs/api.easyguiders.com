@@ -15,13 +15,7 @@ function FindMe(atob, html, getHead = "false", coms = "false", json = new Object
 	var start = new Date();
 	if(html !== undefined)
 	{
-		// html = html.match(/<body[^>]*>([^<]*(?:(?!<\/?body)<[^<]*)*)<\/body\s*>/i);
-		//var start2 = new Date();
 		var $$							= cheerio.load(html);
-		//var $$							= cheerio.load($("html").html());
-		//var end2 = new Date() - start2;
-		//console.log("Execution time find me for get $$: ", end2);
-		
 		if(getHead == "true") {
 			if($$("[property=ratingValue]")[0] !== undefined){
 				json["RES"] = {
@@ -64,20 +58,6 @@ function FindMe(atob, html, getHead = "false", coms = "false", json = new Object
 						note				= (($$('div.rating.reviewItemInline').find($$('span[class*="ui_bubble_rating bubble"]')).get(index) 	!== undefined) ? ( $$('div.rating.reviewItemInline').find($$('span[class*="ui_bubble_rating bubble"]')).get(index).attribs.class.split(' ')[1].split('_')[1] /10 ): "");
 						auteur				= (($$('span.expand_inline.scrname').get(index)					 !== undefined) ? ($$('span.expand_inline.scrname').get(index).children[0].data) : "");
 						urlAvisComplet		= (($$('a[href^="/ShowUserReviews"]').get(index).attribs.href	 !== undefined) ? $$('a[href^="/ShowUserReviews"]').get(index).attribs.href.slice(1) : "");
-						//console.log('https://www.plurimake.com/tripadvisor.php?url='+ urlAvisComplet + ip);
-						/*hReq1({uri: 'https://www.plurimake.com/tripadvisor.php?url='+ urlAvisComplet, forever:false, timeout: 2147483640}), function (err, response, body) {
-							if(!err && response.statusCode == 200) {
-								if(body !== undefined){
-									var start2 = new Date();
-									var $		= cheerio.load(body);
-									var end2 = new Date() - start2;
-									console.log("Execution time find me for get $: ", end2);\
-									// (($('[class="partial_entry"]').get(index).children[0].data 	 !== undefined) ? ($('[class="partial_entry"]').get(index).children[0].data) : "");
-								}
-							}
-							else
-								console.log("Request failed");
-						}*/
 						try{
 							titre				= (($$('[class="noQuotes"]').get(index).children[0].data	     !== undefined) ? ($$('[class="noQuotes"]').get(index).children[0].data) : "");
 							try{
@@ -90,10 +70,7 @@ function FindMe(atob, html, getHead = "false", coms = "false", json = new Object
 						catch(err){
 							console.log(" Cannot read property 'data' of undefined de titre");
 						}
-						//bug de titre nanashi  data of undefined
-						//commentaire 		= (($$('[class="partial_entry"]').get(index).children[0].data 	 !== undefined) ? ($$('[class="partial_entry"]').get(index).children[0].data) : "");
 						json["RES"]["TripAdvisor"]["avis"][atob(date+new Date())] 	= {identifier: atob(titre+date+auteur), auteur: auteur, date: date, note: note, titre: titre, commentaire: commentaire, postID: index, urlBase: urlAvis, AvisCompletUrl: urlAvisComplet};
-						//console.log("json.avis[index]["+ atob(date+new Date()) +"]: "+ beautify(json["RES"]["TripAdvisor"]["avis"][atob(date+new Date())]));
 					}
 				}
 				else
@@ -116,23 +93,14 @@ function reFetch(AppAnalyzer, atob, res, req, next, message, urlAvis, society, i
 	urlAvis = ((forCount <= limit && forCount > 0) ? tripAdvUrl.replace(/Reviews-/g, 'Reviews-or'+forCount+'-') : urlAvis)
 	
 	var start = new Date();
-	//console.log("Compteur Boucle: "+ forCount)
-	//console.log("Compteur Avis: "+ avisCount)
-	//console.log("Compteur Limite: "+ limit)
-	
 	if((Object.keys(queue).length == ((limit/avisCount)+1)) || once || avisCount == 0) {
-		//console.log("Queue: " + beautify(queue));
 		AppAnalyzer.emit('write', req, res, next,beautify(message).replace(/\\/g, ''));
 	}
 	else
 	{
 		if(queue !== undefined) {
-			//console.log('https://www.plurimake.com/tripadvisor.php?url='+ urlAvis + ip);
-			//console.log('http://127.0.0.2/tripadvisor.php?url='+ urlAvis + ip);
-			//hReq1({uri: 'http://127.0.0.2/tripadvisor.php?url='+ urlAvis + ip, forever:false, timeout: 2147483640}, function (err, response, body) {
 			hReq1({uri: 'https://www.plurimake.com/tripadvisor.php?url='+ urlAvis + ip, forever:false, timeout: 2147483640}, function (err, response, body) {
 				if (err){ 
-					//console.log('http://127.0.0.2/tripadvisor.php?url='+ urlAvis + ip);
 					reFetch(AppAnalyzer, atob, res, req, next, message, urlAvis, society, ip, forCount, limit, avisCount, queue, getHead, coms, once);
 				}	
 				else
@@ -153,14 +121,12 @@ function reFetch(AppAnalyzer, atob, res, req, next, message, urlAvis, society, i
 		}
 	}
 	var end = new Date() - start;
-	//console.log("Execution time reFetch: ", end);
 	return message;
 }
 
 function initialize(AppAnalyzer, tripAdvUrl, getHead, coms, ip, atob, req, res, next, message, i) { 
 		var start = new Date();
 		hReq({uri: 'https://www.plurimake.com/tripadvisor.php?url='+ tripAdvUrl + ip, forever:false, timeout: 2147483640})
-		//hReq({uri: 'http://127.0.0.2/tripadvisor.php?url='+ tripAdvUrl + ip, forever:false, timeout: 2147483640})
 		.then(function (body) {
 			var limit	 									= 0;
 			var forCount	 								= 0;
@@ -183,7 +149,6 @@ function initialize(AppAnalyzer, tripAdvUrl, getHead, coms, ip, atob, req, res, 
 						for(forCount=0; forCount <= limit; forCount += avisCount)
 						{
 							message 				= reFetch(AppAnalyzer, atob, res, req, next, message, tripAdvUrl, society, ip, forCount, limit, avisCount, queue, getHead, coms, false);
-							//console.log(message["RES"]["TripAdvisor"].avis);
 						}
 						var end = new Date() - start;
 						console.log("Execution time get initialize: ", end);
