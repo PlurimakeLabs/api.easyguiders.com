@@ -198,7 +198,7 @@ AppAnalyzer.on('initialize', (req, res, next, message) => {
 	token  			= ((req.body.token 				!== undefined && !isEmpty(req.body.token) 		&& (req.method == "POST")) ? req.body.token 			: 			((req.query.token 		!== undefined  	&& !isEmpty(req.query.token))	? req.query.token : 0 ))
 	getHead  		= ((req.body.getHead 			!== undefined && !isEmpty(req.body.getHead) 	&& (req.method == "POST")) ? req.body.getHead 			: 			((req.query.getHead 	!== undefined  	&& !isEmpty(req.query.getHead))	? req.query.getHead : "false" ))
 	
-	datePath 	= __dirname +"/" + society + "/"+formattedDate(new Date(),"date");
+	datePath 	= __dirname +"/DATAX." + society + "/"+formattedDate(new Date(),"date");
 	dateFiles	= formattedDate(new Date(),"timespan")+".json"
 	// message["RES"]									= ((message["RES"]) ? ((message["RES"]["TripAdvisor"]) ? message["RES"]["TripAdvisor"] : new Object({"TripAdvisor":{status:new Object(),lastUpdate: new Date(),globalRating:0,pageCount:0,avisCount:0,avis:{}}})) : new Object({"TripAdvisor":{status:new Object(),lastUpdate:new Date(),globalRating:0,pageCount:0,avisCount:0,avis:{}}}));
 	
