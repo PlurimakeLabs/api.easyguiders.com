@@ -44,7 +44,6 @@ var Parser                      = require("body-parser");
 var hReq		 				= require('request-promise');
 var express         			= require('express');
 var mkdirp 						= require('mkdirp');
-// var jsdom	 					= require("jsdom");
 var https 						= require('https');
 var path 						= require('path');
 var http 						= require('http');
@@ -55,7 +54,6 @@ var fs 							= require('fs');
 var AppAnalyzer        			= new EventEmitter();
 var app            				= new express();
 var date 						= new Date();
-// var {JSDOM} 					= jsdom; 
 //var FacebookHook 				= require('./modules_internal/App.FacebookHook.js');
 // var Yelp		 				= require('./modules_internal/App.YelpHook.js');
 var TripAdvisor 				= require('./modules_internal/App.TripAdvisor.js');
@@ -165,7 +163,6 @@ AppAnalyzer.on('write', (req, res, next, message) => {
 	res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 	res.setHeader('Content-Type', 'application/json');
 	mkdirpath(datePath, false, dateFiles, defaults, message);
-	// res.writeHead(200);
 	res.end(message);
 	var end = new Date() - start;
 	console.log("Execution time in appAnalyzer write :", end);
@@ -187,16 +184,17 @@ AppAnalyzer.on('filter', (req, res, next, message) => {
 	console.log("Execution time in appAnalyzer filter :", end);
 });
 AppAnalyzer.on('initialize', (req, res, next, message) => {
-	ReqType	= ((req.body.ReqType 				!== undefined && !isEmpty(req.body.ReqType)			&& (req.method == "POST")) ? req.body.ReqType 				: 			((req.query.ReqType 		!== undefined 	&& !isEmpty(req.query.ReqType))		? req.query.ReqType : "UNKNOWN"))
-	society  		= ((req.body.society		!== undefined && !isEmpty(req.body.society)		&& (req.method == "POST")) ? req.body.society 				: 			((req.query.society 		!== undefined 	&& !isEmpty(req.query.society))	? req.query.society : "UNKNOWN"))
-	tripAdvUrl		= ((req.body.tripAdvUrl 		!== undefined && !isEmpty(req.body.tripAdvUrl)			&& (req.method == "POST")) ? req.body.tripAdvUrl 				: 			((req.query.tripAdvUrl 		!== undefined 	&& !isEmpty(req.query.tripAdvUrl))		? req.query.tripAdvUrl : "UNKNOWN"))
+	
+	ReqType	= ((req.body.ReqType 					!== undefined && !isEmpty(req.body.ReqType)					&& (req.method == "POST")) ? req.body.ReqType 					: 			((req.query.ReqType 			!== undefined 	&& !isEmpty(req.query.ReqType))				? req.query.ReqType : "UNKNOWN"))
+	society  		= ((req.body.society			!== undefined && !isEmpty(req.body.society)					&& (req.method == "POST")) ? req.body.society 					: 			((req.query.society 			!== undefined 	&& !isEmpty(req.query.society))				? req.query.society : "UNKNOWN"))
+	tripAdvUrl		= ((req.body.tripAdvUrl 		!== undefined && !isEmpty(req.body.tripAdvUrl)				&& (req.method == "POST")) ? req.body.tripAdvUrl 				: 			((req.query.tripAdvUrl 			!== undefined 	&& !isEmpty(req.query.tripAdvUrl))			? req.query.tripAdvUrl : "UNKNOWN"))
 	GoogleKeyAPI	= ((req.body.GoogleKeyAPI 		!== undefined && !isEmpty(req.body.GoogleKeyAPI)			&& (req.method == "POST")) ? req.body.GoogleKeyAPI 				: 			((req.query.GoogleKeyAPI 		!== undefined 	&& !isEmpty(req.query.GoogleKeyAPI))		? req.query.GoogleKeyAPI : "UNKNOWN"))
-	GooglePID		= ((req.body.GooglePID 			!== undefined && !isEmpty(req.body.GooglePID)			&& (req.method == "POST")) ? req.body.GooglePID 				: 			((req.query.GooglePID 		!== undefined 	&& !isEmpty(req.query.GooglePID))		? req.query.GooglePID : "UNKNOWN"))
-	ip  			= ((req.body.ip 				!== undefined && !isEmpty(req.body.ip)			&& (req.method == "POST")) ? '&ip=' + req.body.ip 		: 			((req.query.ip 			!== undefined 	&& !isEmpty(req.query.ip))		? '&ip=' + req.query.ip : '' ))
-	coms  			= ((req.body.coms 				!== undefined && !isEmpty(req.body.coms) 		&& (req.method == "POST")) ? req.body.coms 				: 			((req.query.coms 		!== undefined  	&& !isEmpty(req.query.coms))	? req.query.coms : "false" ))
-	limit  			= ((req.body.limit 				!== undefined && !isEmpty(req.body.limit) 		&& (req.method == "POST")) ? req.body.limit 			: 			((req.query.limit 		!== undefined  	&& !isEmpty(req.query.limit))	? req.query.limit : (0-1) ))
-	token  			= ((req.body.token 				!== undefined && !isEmpty(req.body.token) 		&& (req.method == "POST")) ? req.body.token 			: 			((req.query.token 		!== undefined  	&& !isEmpty(req.query.token))	? req.query.token : 0 ))
-	getHead  		= ((req.body.getHead 			!== undefined && !isEmpty(req.body.getHead) 	&& (req.method == "POST")) ? req.body.getHead 			: 			((req.query.getHead 	!== undefined  	&& !isEmpty(req.query.getHead))	? req.query.getHead : "false" ))
+	GooglePID		= ((req.body.GooglePID 			!== undefined && !isEmpty(req.body.GooglePID)				&& (req.method == "POST")) ? req.body.GooglePID 				: 			((req.query.GooglePID 			!== undefined 	&& !isEmpty(req.query.GooglePID))			? req.query.GooglePID : "UNKNOWN"))
+	ip  			= ((req.body.ip 				!== undefined && !isEmpty(req.body.ip)						&& (req.method == "POST")) ? '&ip=' + req.body.ip 				: 			((req.query.ip 					!== undefined 	&& !isEmpty(req.query.ip))					? '&ip=' + req.query.ip : '' ))
+	coms  			= ((req.body.coms 				!== undefined && !isEmpty(req.body.coms) 					&& (req.method == "POST")) ? req.body.coms 						: 			((req.query.coms 				!== undefined  	&& !isEmpty(req.query.coms))				? req.query.coms : "false" ))
+	limit  			= ((req.body.limit 				!== undefined && !isEmpty(req.body.limit) 					&& (req.method == "POST")) ? req.body.limit 					: 			((req.query.limit 				!== undefined  	&& !isEmpty(req.query.limit))				? req.query.limit : (0-1) ))
+	token  			= ((req.body.token 				!== undefined && !isEmpty(req.body.token) 					&& (req.method == "POST")) ? req.body.token 					: 			((req.query.token 				!== undefined  	&& !isEmpty(req.query.token))				? req.query.token : 0 ))
+	getHead  		= ((req.body.getHead 			!== undefined && !isEmpty(req.body.getHead) 				&& (req.method == "POST")) ? req.body.getHead 					: 			((req.query.getHead 			!== undefined  	&& !isEmpty(req.query.getHead))				? req.query.getHead : "false" ))
 	
 	datePath 	= __dirname +"/DATAX." + society + "/"+formattedDate(new Date(),"date");
 	dateFiles	= formattedDate(new Date(),"timespan")+".json"
@@ -220,7 +218,7 @@ AppAnalyzer.on('initialize', (req, res, next, message) => {
 		switch(ReqType)
 		{
 			case "FACEBOOKHOOK":
-				if(/*GooglePID != "UNKNOWN" &&*/ society != "UNKNOWN") {
+				if(/*FacebookPID != "UNKNOWN" &&*/ society != "UNKNOWN") {
 					//FacebookHook.initialize(AppAnalyzer, req, res, next, message);
 				}
 				else {
