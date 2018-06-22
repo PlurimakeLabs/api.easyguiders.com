@@ -1,0 +1,6 @@
+.git
+.git/
+.git/*
+A.*/*
+node_modules/*
+*/*

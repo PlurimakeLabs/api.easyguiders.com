@@ -1,0 +1,454 @@
+{
+  "RES": {
+    "Google": {
+      "html_attributions": [],
+      "result": {
+        "address_components": [
+          {
+            "long_name": "57",
+            "short_name": "57",
+            "types": [
+              "street_number"
+            ]
+          },
+          {
+            "long_name": "Rue Charlot",
+            "short_name": "Rue Charlot",
+            "types": [
+              "route"
+            ]
+          },
+          {
+            "long_name": "Paris",
+            "short_name": "Paris",
+            "types": [
+              "locality",
+              "political"
+            ]
+          },
+          {
+            "long_name": "Paris",
+            "short_name": "Paris",
+            "types": [
+              "administrative_area_level_2",
+              "political"
+            ]
+          },
+          {
+            "long_name": "Île-de-France",
+            "short_name": "Île-de-France",
+            "types": [
+              "administrative_area_level_1",
+              "political"
+            ]
+          },
+          {
+            "long_name": "France",
+            "short_name": "FR",
+            "types": [
+              "country",
+              "political"
+            ]
+          },
+          {
+            "long_name": "75003",
+            "short_name": "75003",
+            "types": [
+              "postal_code"
+            ]
+          }
+        ],
+        "adr_address": "<span class=\"street-address\">57 Rue Charlot</span>, <span class=\"postal-code\">75003</span> <span class=\"locality\">Paris</span>, <span class=\"country-name\">France</span>",
+        "formatted_address": "57 Rue Charlot, 75003 Paris, France",
+        "formatted_phone_number": "01 44 61 45 49",
+        "geometry": {
+          "location": {
+            "lat": 48.86354509999999,
+            "lng": 2.3631895
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 48.86486928029149,
+              "lng": 2.364587430291502
+            },
+            "southwest": {
+              "lat": 48.86217131970849,
+              "lng": 2.361889469708498
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "id": "cc8db17e2beb4c960aba10730c9e8e03840e90c8",
+        "international_phone_number": "+33 1 44 61 45 49",
+        "name": "Nanashi Charlot",
+        "opening_hours": {
+          "open_now": false,
+          "periods": [
+            {
+              "close": {
+                "day": 0,
+                "time": "1600"
+              },
+              "open": {
+                "day": 0,
+                "time": "1200"
+              }
+            },
+            {
+              "close": {
+                "day": 0,
+                "time": "2300"
+              },
+              "open": {
+                "day": 0,
+                "time": "1930"
+              }
+            },
+            {
+              "close": {
+                "day": 1,
+                "time": "1500"
+              },
+              "open": {
+                "day": 1,
+                "time": "1200"
+              }
+            },
+            {
+              "close": {
+                "day": 1,
+                "time": "2300"
+              },
+              "open": {
+                "day": 1,
+                "time": "1930"
+              }
+            },
+            {
+              "close": {
+                "day": 2,
+                "time": "1500"
+              },
+              "open": {
+                "day": 2,
+                "time": "1200"
+              }
+            },
+            {
+              "close": {
+                "day": 2,
+                "time": "2300"
+              },
+              "open": {
+                "day": 2,
+                "time": "1930"
+              }
+            },
+            {
+              "close": {
+                "day": 3,
+                "time": "1500"
+              },
+              "open": {
+                "day": 3,
+                "time": "1200"
+              }
+            },
+            {
+              "close": {
+                "day": 3,
+                "time": "2300"
+              },
+              "open": {
+                "day": 3,
+                "time": "1930"
+              }
+            },
+            {
+              "close": {
+                "day": 4,
+                "time": "1500"
+              },
+              "open": {
+                "day": 4,
+                "time": "1200"
+              }
+            },
+            {
+              "close": {
+                "day": 4,
+                "time": "2300"
+              },
+              "open": {
+                "day": 4,
+                "time": "1930"
+              }
+            },
+            {
+              "close": {
+                "day": 5,
+                "time": "1500"
+              },
+              "open": {
+                "day": 5,
+                "time": "1200"
+              }
+            },
+            {
+              "close": {
+                "day": 5,
+                "time": "2300"
+              },
+              "open": {
+                "day": 5,
+                "time": "1930"
+              }
+            },
+            {
+              "close": {
+                "day": 6,
+                "time": "1600"
+              },
+              "open": {
+                "day": 6,
+                "time": "1200"
+              }
+            },
+            {
+              "close": {
+                "day": 6,
+                "time": "2300"
+              },
+              "open": {
+                "day": 6,
+                "time": "1930"
+              }
+            }
+          ],
+          "weekday_text": [
+            "Monday: 12:00 – 3:00 PM, 7:30 – 11:00 PM",
+            "Tuesday: 12:00 – 3:00 PM, 7:30 – 11:00 PM",
+            "Wednesday: 12:00 – 3:00 PM, 7:30 – 11:00 PM",
+            "Thursday: 12:00 – 3:00 PM, 7:30 – 11:00 PM",
+            "Friday: 12:00 – 3:00 PM, 7:30 – 11:00 PM",
+            "Saturday: 12:00 – 4:00 PM, 7:30 – 11:00 PM",
+            "Sunday: 12:00 – 4:00 PM, 7:30 – 11:00 PM"
+          ]
+        },
+        "photos": [
+          {
+            "height": 2912,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/116972132435640721121/photos\">Michael Kolchesky</a>"
+            ],
+            "photo_reference": "CmRaAAAAPT_zbncPj93npfYHZV5JebsQV2DY1q6QttfTwB_M44e5D3GMhlRumMxJYHILNfc3O3P3FBiclLc8kx1b9iKNGkO2M_IZChwv46ipKllqaKT-CFpD9FxoCtshwyqYFEpREhDcSvhgIvCAvOZ1WNr88XwNGhSFRaKMkLr1OATxgjmImGY8wWFl4Q",
+            "width": 4368
+          },
+          {
+            "height": 2912,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/116972132435640721121/photos\">Michael Kolchesky</a>"
+            ],
+            "photo_reference": "CmRaAAAAJq2gbofeeEKru9rY7WxLeV048w-WHwh2uxUWJbd1XKHgnEkyYAaL0NN_LRPolFhL1oqyoN5WJZ52FSLv9c4h5A3G40xFxec26NkDy8owoYinWGmBr_o6PeuiXYHXVRppEhBcomM2cbTaFWUG1Hcn11fxGhRphTBgxj50KJGiu58f99u672pLFA",
+            "width": 4368
+          },
+          {
+            "height": 3968,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/115267196504413642587/photos\">JP Vieytes</a>"
+            ],
+            "photo_reference": "CmRaAAAA2KUjHRSDYsn3jFbfw8GqEVJK-KqPiuMMndnOduBC3nMTEow_h-wCdKdb_lM64mZTiX8ZL5XsDdJrLxeKUfnrwOLO66qSdFS5RiTBXgMsjSQ9Uv5XsqWpp3Tt6nEiuE1_EhCpelxA4piEBRV6x4JMaEpeGhQ-VXtDi_2smXO966x-hxVTNHv9Bw",
+            "width": 2976
+          },
+          {
+            "height": 2912,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/116972132435640721121/photos\">Michael Kolchesky</a>"
+            ],
+            "photo_reference": "CmRaAAAAqR4lKYk4m4Z9t0KlFFJDzq4-GF4BWazZRdaSwVA1d_hFJl3p-f-ALD4bS833UgMI_SVUv68WpJRgKwCl8yJwsJEE0_7Bc0v5VE2HXAgVt6De95-1m3pR37EXQYDhyu-DEhDv77I16rIzEmPinm427bNvGhSqmd1y_k00wJhYkXXKySCIvmDg5w",
+            "width": 4368
+          },
+          {
+            "height": 3024,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/100500113748480953488/photos\">Chapot Nicolas</a>"
+            ],
+            "photo_reference": "CmRaAAAASViQw_yAoudG7UJZPLRDyeAV-hXnfbVrgrQGgHyGEPegQj7IsxsWqu9yMqreD7OceqWJH1uzCcDT_ikpki-0IMKG1hwnf32AW5_21RZroZIEhCw5dGAxcV2mo0IN3nm7EhDlzemUiahqqhraszd24ncvGhTcU0hfPxknICb4XvAs-aU5HR2kyA",
+            "width": 4032
+          },
+          {
+            "height": 2912,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/116972132435640721121/photos\">Michael Kolchesky</a>"
+            ],
+            "photo_reference": "CmRaAAAAqTzji9Kbc2Ba--orEtrVEmm_GN3mwHv5CIk6adT8GR2ZySLufqBevJZRGuA9gjAg__bh0R3W08PoNuGpdqDjHVN-0wKNsS-TpzGVflvaLx5SoV_F2A4L0pHe97c_pPrpEhBNRbt-HEyNOQVlW0WUp1f4GhRXsw1ao7I9lfYCwhQCBDMLWuEdVA",
+            "width": 4368
+          },
+          {
+            "height": 1365,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/114550306173736462634/photos\">Greta Margherita</a>"
+            ],
+            "photo_reference": "CmRaAAAAYyiS7J8ildM-AeEY08iSA7jBg6cSpKjOHl1DTVaa3bvTGKg5WGYxasGYcvA4uY2VP3n_YXxDMNkT2gKAjoyYSyUIIPHGOdh21xvjQSTa0LpU4bBvHPnzkzjJBPioOTCREhAtOkGrBOTsMMDmamRf6DlpGhRYDCAzvtQLW4E3ssNP5Yxjoou0Iw",
+            "width": 2048
+          },
+          {
+            "height": 4368,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/116972132435640721121/photos\">Michael Kolchesky</a>"
+            ],
+            "photo_reference": "CmRaAAAAyq-oqGiISTW54KpgA-rQZZpobLJ91ZgkpAJfbUEbRh__FsiXR2diWbsm54ZFsDCHu9pjy1plkEzSb49SejpAHqUqIzP7W5kHg6u2tvw_V3isbY0455UjXdj5AbkM8SvIEhBk8HMBTNyl0tWk0rWGBeZhGhRTRTsj_-fgXTohY-kOiCriWtWnaw",
+            "width": 2912
+          },
+          {
+            "height": 1836,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/111419057049850825977/photos\">Raphael Sandes Solha</a>"
+            ],
+            "photo_reference": "CmRaAAAAFYwgKJHJavYXPHeLIFmrETnuLyhK8nB0BkiVDIqEGJc2gVzipJYx_Bdhs4SVmoo62rB6YN6InT0Yy30TXGStvwa0uVo5y-nG6pqIEo6pve9OPnq5JrMqbFXUgden7K9aEhDd0pAmODwHeZMmfsKvoi_UGhSjBoJohXgfVTroXZC0Fx6G6UI2dw",
+            "width": 3264
+          },
+          {
+            "height": 2322,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/114918432037916804548/photos\">Sam Cin</a>"
+            ],
+            "photo_reference": "CmRaAAAAu7r9W4ARfnDvqIv3rSWeshtv3gEIYmFdMLoqToSmcAq2bRlzJ2QFWATm4ABq96Dgxn3Y6vcK3hUma1fXvmsiuy9IibVbt1GVS3tGKKFSiaPy9KkLLkMzE2NHQ2oqnBZmEhBTUMAi7aMFeIkThGZae7oYGhQB4PDaKcbhIPHeeDYkUymu5b954A",
+            "width": 4128
+          }
+        ],
+        "place_id": "ChIJGzHEYQZu5kcRaNy7uRMVi1E",
+        "price_level": 1,
+        "rating": 4.1,
+        "reference": "CmRRAAAABMMLPKoKUM188Ox2AtHqg-tMdOkRi7yGKja69J6JOJeNXAzoIA5_EZRj-qL8WucSH0Vpmkt-gsAkeV2EpqEx-4FWmIoBUajYl3JKP17PXMDcRYZ6_mZeX6m9ddCzr9mSEhCFsnuotK1WlUM9KlNemTzJGhTKfLacqegAdGz-lUm1WuJisKvh8Q",
+        "reviews": [
+          {
+            "author_name": "Andre Arriaza",
+            "author_url": "https://www.google.com/maps/contrib/107327499534654926825/reviews",
+            "language": "en",
+            "profile_photo_url": "https://lh4.googleusercontent.com/-z9VclV-durI/AAAAAAAAAAI/AAAAAAAAEl4/-MuPP43S-fc/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
+            "rating": 5,
+            "relative_time_description": "3 weeks ago",
+            "text": "Where Tokyo met Paris cuisine and things got really interesting. Cool place to enjoy Japanese cuisine with that unique Parisienne style",
+            "time": 1527457609
+          },
+          {
+            "author_name": "Ntiin Wardjojo",
+            "author_url": "https://www.google.com/maps/contrib/110167352794732274718/reviews",
+            "language": "en",
+            "profile_photo_url": "https://lh5.googleusercontent.com/-Rjg94AGGhUA/AAAAAAAAAAI/AAAAAAAABiM/OfGHZdeW0ms/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+            "rating": 5,
+            "relative_time_description": "2 months ago",
+            "text": "A must go place to find a French interpertation of Japanese food. Fusion food, simple, fresh and healthy. Love the food. Place is cozy, staff is friendly. Highly recomended.",
+            "time": 1522784811
+          },
+          {
+            "author_name": "Fabienne Dobbe",
+            "author_url": "https://www.google.com/maps/contrib/104010566900011914819/reviews",
+            "language": "en",
+            "profile_photo_url": "https://lh4.googleusercontent.com/-djJCqZEQzt8/AAAAAAAAAAI/AAAAAAAABCA/RIlXMc6DNko/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
+            "rating": 4,
+            "relative_time_description": "a month ago",
+            "text": "Very fresh fish and a Super fast service. They should only get an English menu card since it’s hard to find out what is what. For vegans gluten/dairy intollerance there are some options, just ask them. The dessert menu is amazing! We had the vegan coconut pannacota with a caramelised bananacake didn’t taste like a non dairy dessert!",
+            "time": 1524984661
+          },
+          {
+            "author_name": "변진영",
+            "author_url": "https://www.google.com/maps/contrib/117046828502057031345/reviews",
+            "language": "en",
+            "profile_photo_url": "https://lh5.googleusercontent.com/-oB1ms2xwU3g/AAAAAAAAAAI/AAAAAAAAAAA/AB6qoq0ad99rVz_ddCnLL82Sww2vPKsR-Q/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+            "rating": 4,
+            "relative_time_description": "a month ago",
+            "text": "As the restaurant is full of people, take out the Oniguri and Bento. Onigury taste good, also the Poisson. Except the salmon, i think mostly Bento is composed of super food or vegan. As Onigury price 2 euros and Bento is 10 euros, it is quite reasonable price in Paris. You could buy this food and go nearby park for picnic.",
+            "time": 1525190644
+          },
+          {
+            "author_name": "Khalil El Khalil",
+            "author_url": "https://www.google.com/maps/contrib/107029413832587519574/reviews",
+            "language": "en",
+            "profile_photo_url": "https://lh6.googleusercontent.com/-2uNXUrEtNZU/AAAAAAAAAAI/AAAAAAAADsg/7MJ_bdT3kFg/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
+            "rating": 5,
+            "relative_time_description": "4 months ago",
+            "text": "Great food. Friendly personale. Something different. Loved it",
+            "time": 1518798232
+          }
+        ],
+        "scope": "GOOGLE",
+        "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "url": "https://maps.google.com/?cid=5875813313299602536",
+        "utc_offset": 120,
+        "vicinity": "57 Rue Charlot, Paris",
+        "website": "http://www.nanashi.paris/"
+      },
+      "status": "OK",
+      "lastUpdate": "2018-06-22T16:51:39.235Z"
+    },
+    "TripAdvisor": {
+      "status": {
+        "code": 403,
+        "error": "Err: TripAdvisor Disabled, set ReqType parameter with value '(string)TRIPADVISOR' to enable."
+      },
+      "avis": {}
+    },
+    "lastUpdate": "2018-06-22T16:51:38.862Z",
+    "genFiles": "D:\\ZSERVERS\\api.easyguiders.com/TEST123/2018/06/22/1529686296.json"
+  },
+  "REQ": {
+    "status": {
+      "code": 200,
+      "host": "::ffff:127.0.0.1:49978",
+      "you": "Unknown",
+      "GET": {
+        "GoogleKeyAPI": "AIzaSyCsPqtOh2x2n1nxfYYttWcKRoJzuFhRjS8",
+        "GooglePID": "ChIJGzHEYQZu5kcRaNy7uRMVi1E",
+        "society": "TEST123",
+        "token": "023C7A105F19424EA123CCA7EF2668BB9B31D3D91E162884ECA45C3103E4A211",
+        "ReqType": "GOOGLE"
+      },
+      "req.uri": "?GoogleKeyAPI=AIzaSyCsPqtOh2x2n1nxfYYttWcKRoJzuFhRjS8&GooglePID=ChIJGzHEYQZu5kcRaNy7uRMVi1E&society=TEST123&token=023C7A105F19424EA123CCA7EF2668BB9B31D3D91E162884ECA45C3103E4A211&ReqType=GOOGLE",
+      "method": "GET",
+      "target": "GET /"
+    },
+    "httpVersion": "1.1",
+    "params": {},
+    "body": {},
+    "socket": {
+      "headers": {
+        "host": "127.0.0.1:8080",
+        "connection": "keep-alive",
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36",
+        "dnt": "1",
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+        "accept-encoding": "gzip, deflate, br",
+        "accept-language": "fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7",
+        "cookie": "_ga=GA1.1.1438712276.1523419675; __zlcmid=lshG44ncVv7pdQ"
+      },
+      "rawHeaders": [
+        "Host",
+        "127.0.0.1:8080",
+        "Connection",
+        "keep-alive",
+        "Upgrade-Insecure-Requests",
+        "1",
+        "User-Agent",
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36",
+        "DNT",
+        "1",
+        "Accept",
+        "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+        "Accept-Encoding",
+        "gzip, deflate, br",
+        "Accept-Language",
+        "fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7",
+        "Cookie",
+        "_ga=GA1.1.1438712276.1523419675; __zlcmid=lshG44ncVv7pdQ"
+      ]
+    }
+  }
+}
