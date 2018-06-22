@@ -220,7 +220,6 @@ AppAnalyzer.on('initialize', (req, res, next, message) => {
 			case "FACEBOOKHOOK":
 				if(/*FacebookPID != "UNKNOWN" &&*/ society != "UNKNOWN") {
 					//FacebookHook.initialize(AppAnalyzer, req, res, next, message);
-					//test
 				}
 				else {
 					res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
